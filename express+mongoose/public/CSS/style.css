@@ -1,0 +1,80 @@
+body {
+  margin-left: 20px;
+  background: linear-gradient(to right, #536976, #292e49);
+}
+.chat {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px;
+  gap: 20px;
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 240px;
+}
+
+.msg {
+  background-color: blueviolet;
+  color: white;
+  padding: 5px 15px;
+  box-shadow: 0px 0px 3px;
+  border-radius: 6px;
+  width: 500px;
+  overflow: auto;
+}
+.first_h {
+  font-size: 50px;
+  -webkit-text-stroke: 2px #cc2b5e;
+  background-color: blue;
+  color: white;
+  text-shadow: 0px 0px 30px blue;
+  text-align: center;
+  margin-right: 20px;
+  border-radius: 8px;
+  padding: 4px;
+}
+.first_h:hover {
+  font-size: 50px;
+  cursor: pointer;
+  animation: 1.5s infinite anim3;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1 0 120px;
+}
+hr {
+  width: 20px;
+  background: linear-gradient(to right, #e65c00, #f9d423);
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px white;
+  animation: 1.5s infinite anim2;
+}
+button {
+  padding: 8px;
+  background-color: red;
+  color: white;
+  font-size: medium;
+  border-radius: 10px;
+}
+@keyframes anim3 {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(90deg);
+  }
+}
+@keyframes anim2 {
+  0% {
+    transform: rotateX(0);
+  }
+
+  100% {
+    transform: rotateX(90deg);
+  }
+}
